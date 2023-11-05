@@ -5,5 +5,12 @@
 }
 
 
+@await Component.InvokeAsync("_DefaultFeatureComponentPartial");
 
-<h2>Burası AnaSayfa Olacak</h2>
+@await Component.InvokeAsync("_DefaultHomePageProductList");
+
+@await Component.InvokeAsync("_DefaultWhoWeAreComponentPartial");
+
+@await Component.InvokeAsync("_DefaultServicesComponentPartial");
+
+@await Component.InvokeAsync("_DefaultProductListExploreCitiesComponentPartial");
