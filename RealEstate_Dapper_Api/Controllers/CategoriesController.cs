@@ -46,8 +46,8 @@ namespace RealEstate_Dapper_Api.Controllers
         [HttpGet("{id}")]
         public async Task<IActionResult> GetCategory(int id)
         {
-           var value= _categoryRepository.GetCategory(id);
-            return Ok(value);
+           var value= await _categoryRepository.GetCategory(id);
+           return Ok(value);
         }
         
 
