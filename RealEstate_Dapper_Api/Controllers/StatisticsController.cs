@@ -21,12 +21,13 @@ namespace RealEstate_Dapper_Api.Controllers
         {
             return Ok(_statisticsRepository.ActiveCategoryCount());
         }
+
         [HttpGet("ActiveEmployeeCount")]
         public IActionResult ActiveEmployeeCount()
         {
             return Ok(_statisticsRepository.ActiveEmployeeCount());
         }
-        
+
         [HttpGet("ApartmentCount")]
         public IActionResult ApartmentCount()
         {
@@ -63,16 +64,52 @@ namespace RealEstate_Dapper_Api.Controllers
             return Ok(_statisticsRepository.CategoryNameByMaxProductCount());
         }
 
-        [HttpGet("AvereageRoomCount")]
-        public IActionResult AvereageRoomCount()
+        [HttpGet("CityNameByMaxProductCount")]
+        public IActionResult CityNameByMaxProductCount()
         {
-            return Ok(_statisticsRepository.AvereageRoomCount());
+            return Ok(_statisticsRepository.CityNameByMaxProductCount());
         }
 
-        [HttpGet("AvereageRoomCount")]
-        public IActionResult AvereageRoomCount()
+        [HttpGet("DifferentCityCount")]
+        public IActionResult DifferentCityCount()
         {
-            return Ok(_statisticsRepository.AvereageRoomCount());
+            return Ok(_statisticsRepository.DifferentCityCount());
+        }
+
+        [HttpGet("EmployeeNameByMaxProductCount")]
+        public IActionResult EmployeeNameByMaxProductCount()
+        {
+            return Ok(_statisticsRepository.EmployeeNameByMaxProductCount());
+        }
+
+        [HttpGet("LastProductPrice")]
+        public IActionResult LastProductPrice()
+        {
+            return Ok(_statisticsRepository.LastProductPrice());
+        }
+
+        [HttpGet("NewestBuildingYear")]
+        public IActionResult NewestBuildingYear()
+        {
+            return Ok(_statisticsRepository.NewestBuildingYear());
+        }
+
+        [HttpGet("OldestBuildingYear")]
+        public IActionResult OldestBuildingYear()
+        {
+            return Ok(_statisticsRepository.OldestBuildingYear());
+        }
+
+        [HttpGet("PassiveCategoryCount")]
+        public IActionResult PassiveCategoryCount()
+        {
+            return Ok(_statisticsRepository.PassiveCategoryCount());
+        }
+
+        [HttpGet("ProductCount")]
+        public IActionResult ProductCount()
+        {
+            return Ok(_statisticsRepository.ProductCount());
         }
     }
 }

@@ -11,7 +11,7 @@
         string CategoryNameByMaxProductCount();
         decimal AverageProductPriceByRent();
         decimal AverageProductPriceBySale();
-        string CityNameByMaximumProductCount();
+        string CityNameByMaxProductCount();
         int DifferentCityCount();
         decimal LastProductPrice();
         string NewestBuildingYear();
